@@ -1,0 +1,19 @@
+body,
+html {
+  background-color: #061d39 !important;
+}
+
+* {
+  font-family: "Montserrat", sans-serif !important;
+  color: white !important;
+}
+.MuiContainer-root {
+  /* padding-top: 104px; */
+}
+
+#About,
+#Work,
+#Contact,
+#Footer {
+  height: 500px;
+}
