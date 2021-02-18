@@ -27,12 +27,22 @@ const useStyles = makeStyles(() => ({
 const Home = () => {
   const classes = useStyles();
   return (
-    // <Box mt={8}>
-    <Grid container className={classes.root} alignItems="center">
-      {/* <Box order={1}> */}
-      <Grid item sm={12} md={6}>
+    <Box
+      component={Grid}
+      container
+      display="flex"
+      className={classes.root}
+      alignItems="center"
+      id="Home"
+    >
+      <Box order={{ md: "2" }} sm={12} md={6}>
         <ResponsiveFontSizes>
-          <Typography variant="h2" id="Home">
+          <Typography variant="h3">PORTFOLIO</Typography>
+        </ResponsiveFontSizes>
+      </Box>
+      <Box sm={12} md={6}>
+        <ResponsiveFontSizes>
+          <Typography variant="h2">
             SLOBODAN <br />
             MARKOSKI
           </Typography>
@@ -42,14 +52,8 @@ const Home = () => {
           <span></span>
         </div>
         <Typography variant="h4">Web Developer</Typography>
-      </Grid>
-      {/* </Box> */}
-      <Grid item sm={12} md={6}>
-        <ResponsiveFontSizes>
-          <Typography variant="h3">PORTFOLIO</Typography>
-        </ResponsiveFontSizes>
-      </Grid>
-    </Grid>
+      </Box>
+    </Box>
   );
 };
 
