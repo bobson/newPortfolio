@@ -13,6 +13,10 @@ import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import Drawer from "@material-ui/core/Drawer";
 import DialogSlide from "../Dialog/DialogSlide";
 
+import HomeIcon from "@material-ui/icons/Home";
+import EmojiPeopleIcon from "@material-ui/icons/EmojiPeople";
+import WorkIcon from "@material-ui/icons/Work";
+
 import { useStyles } from "./styles";
 
 export default function Navbar() {
@@ -52,7 +56,7 @@ export default function Navbar() {
 
   return (
     <>
-      <AppBar className={classes.appBar} position="sticky">
+      <AppBar className={classes.appBar} position="fixed">
         <Typography className={classes.logo} variant="h6">
           SM
         </Typography>
@@ -71,8 +75,8 @@ export default function Navbar() {
             onChange={handleTabsChange}
             aria-label="simple tabs"
           >
-            <Tab label="home" href="#Home" />
-            <Tab label="about me" href="#About" />
+            <Tab label="home" href="#Home"></Tab>
+            <Tab label="about" href="#About" />
             <Tab label="work" href="#Work" />
           </Tabs>
           <DialogSlide
@@ -91,6 +95,7 @@ export default function Navbar() {
           </DialogSlide>
         </Toolbar>
       </AppBar>
+
       <Drawer
         className={classes.drawer}
         variant="persistent"

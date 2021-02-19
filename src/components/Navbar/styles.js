@@ -9,7 +9,7 @@ export const useStyles = makeStyles((theme) => ({
     backgroundColor: "transparent",
     boxShadow: "none",
     padding: theme.spacing(2),
-    zIndex: "100",
+    zIndex: "900",
     alignItems: "center",
   },
   logo: {
@@ -23,8 +23,10 @@ export const useStyles = makeStyles((theme) => ({
       display: "none",
     },
     "& .MuiTab-root": {
-      minWidth: "150px",
+      minWidth: "50px",
+      maxWidth: "200px",
       fontFamily: "Montserrat, sans-serif",
+      color: "tomato",
     },
   },
   menuIcon: {
@@ -48,7 +50,7 @@ export const useStyles = makeStyles((theme) => ({
     width: drawerWidth,
     flexShrink: 0,
     // height: "100vh",
-    zIndex: 0,
+    // zIndex: 0,
     // display: "flex",
     // justifyContent: "center",
     // alignItems: "center",
@@ -57,7 +59,7 @@ export const useStyles = makeStyles((theme) => ({
     width: drawerWidth,
     backgroundImage: "linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a)",
     height: "100vh",
-    zIndex: 0,
+    // zIndex: 0,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -74,5 +76,8 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: "2rem",
     opacity: "0.7",
     color: "white",
+  },
+  space: {
+    height: "86px",
   },
 }));
