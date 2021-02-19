@@ -15,7 +15,7 @@ export const useStyles = makeStyles((theme) => ({
   logo: {
     // margin: theme.spacing(2),
     // marginLeft: theme.spacing(5),
-    fontFamily: "'Ballet', cursive !important",
+    // fontFamily: "'Ballet', cursive !important",
   },
   toolbar: {
     marginLeft: "auto",
@@ -38,6 +38,8 @@ export const useStyles = makeStyles((theme) => ({
     // color: "#ff4d5a",
     // fontSize: "2rem",
     textTransform: "none",
+    fontWeight: "900",
+    // background: "#0D324D",
   },
   hide: {
     display: "none",

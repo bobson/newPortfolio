@@ -82,7 +82,7 @@ export default function Navbar() {
           >
             <Button
               variant="contained"
-              color="secondary"
+              // color="primary"
               className={classes.contactButton}
               onClick={handleDialogOpen}
             >
