@@ -6,7 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import WorkCard from "../WorkCard/WorkCard";
 import BrainsterSpace from "../../assets/images/BrainsterSpace.jpg";
 import Carousel from "react-material-ui-carousel";
-// import { Carousel } from "antd";
+import LazyShow from "../LazyShow";
 
 const useStyles = makeStyles((theme) => ({
   space: { height: "86px" },
@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
       width: "88px",
       height: "4px",
       borderRadius: "5px",
-      background: "#ff4d5a",
+      background: "#FD2155",
     },
     "& span:first-child": {
       marginBottom: "1rem",
@@ -43,6 +43,9 @@ const useStyles = makeStyles((theme) => ({
     // position: "absolute",
     // top: "30%",
   },
+  mainText: {
+    color: "#0BFDD8",
+  },
 }));
 
 const Work = () => {
@@ -60,44 +63,50 @@ const Work = () => {
         <Box pb={8} pt={8}>
           {/* <div className={classes.left}> */}
           <Grid item md={12} lg={4}>
-            <Typography variant="h2">MY WORK</Typography>
-            <div className={classes.border}>
-              <span></span>
-              <span></span>
-            </div>
-            <Typography variant="h5">Websites</Typography>
+            <LazyShow marginX={-20}>
+              <Typography className={classes.mainText} variant="h2">
+                MY WORK
+              </Typography>
+              <div className={classes.border}>
+                <span></span>
+                <span></span>
+              </div>
+              <Typography variant="h5">Websites</Typography>
+            </LazyShow>
           </Grid>
           {/* </div> */}
         </Box>
         {/* <Box clone order={{ xs: "1", sm: "2" }}> */}
         <Grid item md={12} order={2} lg={8}>
-          <Carousel
-            animation="slide"
-            navButtonsAlwaysVisible
-            stopAutoPlayOnHover={false}
-          >
-            <WorkCard
-              image={BrainsterSpace}
-              title="Brainster - Final Project"
-              description="Final Project of the Braister bootcamp build with React and Bootsrap"
-              demo="https://brainsterspace-slobodan.netlify.app/"
-              git="https://github.com/bobson/BrainsterSpace.git"
-            />
-            <WorkCard
-              image={BrainsterSpace}
-              title="Brainster - Final Project"
-              description="Final Project of the Braister bootcamp build with React and Bootsrap"
-              demo="https://brainsterspace-slobodan.netlify.app/"
-              git="https://github.com/bobson/BrainsterSpace.git"
-            />
-            <WorkCard
-              image={BrainsterSpace}
-              title="Brainster - Final Project"
-              description="Final Project of the Braister bootcamp build with React and Bootsrap"
-              demo="https://brainsterspace-slobodan.netlify.app/"
-              git="https://github.com/bobson/BrainsterSpace.git"
-            />
-          </Carousel>
+          <LazyShow marginX={40}>
+            <Carousel
+              animation="slide"
+              navButtonsAlwaysVisible
+              stopAutoPlayOnHover={false}
+            >
+              <WorkCard
+                image={BrainsterSpace}
+                title="Brainster - Final Project"
+                description="Final Project of the Braister bootcamp build with React and Bootsrap"
+                demo="https://brainsterspace-slobodan.netlify.app/"
+                git="https://github.com/bobson/BrainsterSpace.git"
+              />
+              <WorkCard
+                image={BrainsterSpace}
+                title="Brainster - Final Project"
+                description="Final Project of the Braister bootcamp build with React and Bootsrap"
+                demo="https://brainsterspace-slobodan.netlify.app/"
+                git="https://github.com/bobson/BrainsterSpace.git"
+              />
+              <WorkCard
+                image={BrainsterSpace}
+                title="Brainster - Final Project"
+                description="Final Project of the Braister bootcamp build with React and Bootsrap"
+                demo="https://brainsterspace-slobodan.netlify.app/"
+                git="https://github.com/bobson/BrainsterSpace.git"
+              />
+            </Carousel>
+          </LazyShow>
         </Grid>
         {/* </Box> */}
       </Grid>

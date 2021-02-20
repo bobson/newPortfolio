@@ -6,7 +6,7 @@ export const useStyles = makeStyles((theme) => ({
   appBar: {
     display: "flex",
     flexDirection: "row",
-    backgroundColor: "transparent",
+    backgroundColor: "#1D1D1D",
     boxShadow: "none",
     padding: theme.spacing(2),
     zIndex: "900",
@@ -26,7 +26,7 @@ export const useStyles = makeStyles((theme) => ({
       minWidth: "50px",
       maxWidth: "200px",
       fontFamily: "Montserrat, sans-serif",
-      color: "tomato",
+      // color: "#08FDD8",
     },
   },
   menuIcon: {
@@ -37,11 +37,16 @@ export const useStyles = makeStyles((theme) => ({
   },
   contactButton: {
     marginLeft: theme.spacing(5),
-    // color: "#ff4d5a",
+    color: "#08FDD8",
     // fontSize: "2rem",
     textTransform: "none",
     fontWeight: "900",
-    // background: "#0D324D",
+    // background: "#08FDD8",
+    border: "1px solid #08FDD8",
+    "&:hover": {
+      background: "#08FDD8",
+      color: "black",
+    },
   },
   hide: {
     display: "none",

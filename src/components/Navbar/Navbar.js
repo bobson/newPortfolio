@@ -17,6 +17,8 @@ import HomeIcon from "@material-ui/icons/Home";
 import EmojiPeopleIcon from "@material-ui/icons/EmojiPeople";
 import WorkIcon from "@material-ui/icons/Work";
 
+// import Particles from "react-particles-js";
+
 import { useStyles } from "./styles";
 
 export default function Navbar() {
@@ -42,17 +44,17 @@ export default function Navbar() {
     setOpenDialog(false);
   };
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY <= 400) {
-      setTabIndex(0);
-    }
-    if (window.scrollY > 400 && window.scrollY <= 900) {
-      setTabIndex(1);
-    }
-    if (window.scrollY > 900 && window.scrollY <= 1400) {
-      setTabIndex(2);
-    }
-  });
+  // window.addEventListener("scroll", () => {
+  //   if (window.scrollY <= 400) {
+  //     setTabIndex(0);
+  //   }
+  //   if (window.scrollY > 400 && window.scrollY <= 900) {
+  //     setTabIndex(1);
+  //   }
+  //   if (window.scrollY > 900 && window.scrollY <= 1400) {
+  //     setTabIndex(2);
+  //   }
+  // });
 
   return (
     <>
@@ -85,7 +87,7 @@ export default function Navbar() {
             handleDialogClose={handleDialogClose}
           >
             <Button
-              variant="contained"
+              variant="outlined"
               // color="primary"
               className={classes.contactButton}
               onClick={handleDialogOpen}
