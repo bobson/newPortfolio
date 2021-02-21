@@ -4,7 +4,6 @@
     "@material-ui/icons": "^4.11.2",
     "@mui-treasury/styles": "^1.13.1",
     "@types/react": "^16.8.6 || ^17.0.0",
-    "aos": "^2.3.4",
     "emailjs-com": "^2.6.4",
     "framer-motion": "^3.6.2",
     "react": "^16.8.0 || ^17.0.0",

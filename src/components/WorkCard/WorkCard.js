@@ -12,11 +12,11 @@ const useStyles = makeStyles({
   root: {
     maxWidth: "100%",
     margin: "auto",
-    zIndex: -1,
-    overflow: "hidden",
+    // zIndex: -1,
+    // overflow: "hidden",
   },
   description: {
-    // height: 140,
+    // height: 70,
   },
   media: {
     // objectFit: "cover",

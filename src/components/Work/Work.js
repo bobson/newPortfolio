@@ -12,8 +12,8 @@ const useStyles = makeStyles((theme) => ({
   space: { height: "86px" },
   root: {
     width: "100%",
-    height: "100vh",
-    paddingBottom: "30vh",
+    height: "80vh",
+    // paddingBottom: "30vh",
   },
   border: {
     display: "inline-block",
@@ -63,7 +63,7 @@ const Work = () => {
         <Box pb={8} pt={8}>
           {/* <div className={classes.left}> */}
           <Grid item md={12} lg={4}>
-            <LazyShow marginX={-20}>
+            <LazyShow marginX={-200}>
               <Typography className={classes.mainText} variant="h2">
                 MY WORK
               </Typography>
@@ -78,7 +78,7 @@ const Work = () => {
         </Box>
         {/* <Box clone order={{ xs: "1", sm: "2" }}> */}
         <Grid item md={12} order={2} lg={8}>
-          <LazyShow marginX={40}>
+          <LazyShow marginX={300}>
             <Carousel
               animation="slide"
               navButtonsAlwaysVisible

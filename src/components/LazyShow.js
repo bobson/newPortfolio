@@ -1,7 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 
-function useOnScreen(ref, rootMargin = "30px") {
+function useOnScreen(ref, rootMargin = "-50px") {
   // State and setter for storing whether element is visible
   const [isIntersecting, setIntersecting] = useState(false);
 
@@ -38,10 +38,12 @@ const LazyShow = ({ children, marginX }) => {
         x: 0,
         opacity: 1,
         transition: {
-          duration: 0.5,
+          duration: 1,
           ease: "easeOut",
         },
       });
+    } else {
+      controls.start({ opacity: 0, x: marginX });
     }
   }, [onScreen, controls]);
   return (

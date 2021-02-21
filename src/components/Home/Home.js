@@ -57,7 +57,7 @@ const Home = () => {
       >
         <Box clone order={{ xs: "2", sm: "1" }}>
           <Grid item xs={12} sm={6}>
-            <LazyShow marginX={-20}>
+            <LazyShow marginX={-200}>
               <Typography variant="h2">SLOBODAN MARKOSKI</Typography>
               <div className={classes.border}>
                 <span></span>
@@ -69,7 +69,7 @@ const Home = () => {
         </Box>
         <Box clone order={{ xs: "1", sm: "2" }}>
           <Grid item xs={12} order={2} sm={6}>
-            <LazyShow marginX={60}>
+            <LazyShow marginX={300}>
               <Typography className={classes.textCenter} variant="h4">
                 PORTFOLIO
               </Typography>
