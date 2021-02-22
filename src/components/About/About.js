@@ -42,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
   },
   mainText: {
     color: "#08FDD8",
+    fontWeight: 900,
   },
   image: {
     width: "100%",
@@ -68,7 +69,7 @@ const About = () => {
       >
         <Box clone order={{ xs: "2", sm: "1" }}>
           <Grid item xs={12} order={2} sm={6}>
-            <LazyShow marginX={-200}>
+            <LazyShow marginX={-30}>
               <Typography className={classes.textCenter} variant="subtitle2">
                 "Results-oriented Front-end Developer love using React and
                 Material UI, dedicated to creating and optimizing interactive,
@@ -82,9 +83,9 @@ const About = () => {
         </Box>
         <Box clone order={{ xs: "1", sm: "2" }}>
           <Grid item xs={12} sm={6}>
-            <LazyShow marginX={300}>
-              <Typography className={classes.mainText} variant="h2">
-                ABOUT ME
+            <LazyShow marginX={30}>
+              <Typography className={classes.mainText} variant="h1">
+                About Me
               </Typography>
               <div className={classes.border}>
                 <span></span>

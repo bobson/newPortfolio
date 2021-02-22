@@ -28,18 +28,21 @@ function useOnScreen(ref, rootMargin = "-50px") {
   return isIntersecting;
 }
 
-const LazyShow = ({ children, marginX }) => {
+const LazyShow = ({ children, startX = 0, marginX, position, delay }) => {
   const controls = useAnimation();
   const rootRef = useRef();
   const onScreen = useOnScreen(rootRef);
   useEffect(() => {
     if (onScreen) {
       controls.start({
-        x: 0,
+        x: startX,
+        position,
         opacity: 1,
         transition: {
-          duration: 1,
+          duration: 0.5,
           ease: "easeOut",
+          delay,
+          x: { type: "tween" },
         },
       });
     } else {
