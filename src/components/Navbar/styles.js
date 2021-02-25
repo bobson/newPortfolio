@@ -6,7 +6,7 @@ export const useStyles = makeStyles((theme) => ({
   appBar: {
     display: "flex",
     flexDirection: "row",
-    backgroundColor: "#1D1D1D",
+    backgroundColor: "transparent",
     boxShadow: "none",
     padding: theme.spacing(2),
     zIndex: "900",
